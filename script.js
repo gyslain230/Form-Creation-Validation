@@ -25,9 +25,11 @@ document.addEventListener('DOMContentLoaded', function() {
             messages.push("please enter a valid password not less than 8 characters  and try again");
             
         }
+        //displaying feeedback
+        
         feedbackDiv.style.display = "block";
         if (isValid==true) {
-            feedbackDiv.textContent = "Registration Successfully";
+            feedbackDiv.textContent = "Registration Successful";
             feedbackDiv.style.color = "28a745";
 
             
