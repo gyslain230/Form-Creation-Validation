@@ -6,21 +6,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const feedbackDiv = document.getElementById("form-feedback");
     form.addEventListener("submit",function(event) {
         event.preventDefault();
-        const uname = document.getElementById("username").Value.trim();
-        const uemail = document.getElementById("email").value.trim();
-        const upassword = document.getElementById("password").value.trim();
+        const username = document.getElementById("username").Value.trim();
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value.trim();
         let isValid = true;
         var messages= [];
-        if (uname.length < 3) {
+        if (username.length < 3) {
             isValid = false;
             messages.push("please enter a valid username not less than 3 letters and try again");
             
         }
-        if (!uemail.includes('@') || !uemail.includes('.')) {
+        if (!email.includes('@') || !email.includes('.')) {
             isValid = false;
             messages.push("The email must contain both '@' and '.' characters.");
         }
-        if (upassword.length < 8) {
+        if (password.length < 8) {
             isValid = false;
             messages.push("please enter a valid password not less than 8 characters  and try again");
             
